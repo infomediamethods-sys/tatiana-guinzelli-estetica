@@ -21,10 +21,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&amp;family=Raleway:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="preload" as="image" media="(max-width: 899px)" imagesrcset="assets/img/heroi-tatiana-mobile-480.webp 480w, assets/img/heroi-tatiana-mobile-960.webp 960w" imagesizes="100vw">
 <link rel="stylesheet" href="assets/css/base.css">
 <link rel="stylesheet" href="assets/css/style.css">
-<link rel="preload" as="image" href="assets/img/heroi-tatiana-mobile.webp" media="(max-width: 899px)" type="image/webp">
-<link rel="preload" as="image" href="assets/img/heroi-tatiana.webp" media="(min-width: 900px)" type="image/webp">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -108,11 +107,10 @@
       <div class="heroi__midia">
         <div class="arco">
           <picture>
-            <source media="(max-width: 899px)" srcset="assets/img/heroi-tatiana-mobile.webp" type="image/webp">
-            <source media="(max-width: 899px)" srcset="assets/img/heroi-tatiana-mobile.jpg">
-            <source srcset="assets/img/heroi-tatiana.webp" type="image/webp">
-            <img src="assets/img/heroi-tatiana.jpg" width="1600" height="2000" alt="Tatiana Guinzelli, de jaleco branco, durante um atendimento na clínica." fetchpriority="high">
-          </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/heroi-tatiana-mobile-480.webp 480w, assets/img/heroi-tatiana-mobile-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/heroi-tatiana-960.webp 960w, assets/img/heroi-tatiana-1600.webp 1600w" sizes="100vw">
+  <img src="assets/img/heroi-tatiana-960.jpg" width="1600" height="2000" alt="Tatiana Guinzelli, de jaleco branco, durante um atendimento na clínica." decoding="async" fetchpriority="high">
+</picture>
         </div>
       </div>
     </div>
@@ -138,10 +136,11 @@
     <div class="container">
       <div class="bloco-moldura">
         <div class="painel">
-          <picture class="painel__foto">
-            <source srcset="assets/img/painel-servicos.webp" type="image/webp">
-            <img src="assets/img/painel-servicos.jpg" width="2400" height="1600" alt="" loading="lazy">
-          </picture>
+          <picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/painel-servicos-480.webp 480w, assets/img/painel-servicos-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/painel-servicos-960.webp 960w, assets/img/painel-servicos-1600.webp 1600w" sizes="50vw">
+  <img src="assets/img/painel-servicos-960.jpg" width="2400" height="1600" alt="" decoding="async">
+</picture>
           <div class="painel__conteudo">
             <div class="painel__cabeca">
               <p class="rotulo rotulo--branco">Serviços</p>
@@ -195,9 +194,10 @@
       <div class="sobre__midia">
         <div class="arco-inv">
           <picture>
-            <source srcset="assets/img/sobre-tatiana.webp" type="image/webp">
-            <img src="assets/img/sobre-tatiana.jpg" width="1200" height="1500" alt="Tatiana Guinzelli sorrindo, de camisa branca, à mesa da clínica." loading="lazy">
-          </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/sobre-tatiana-480.webp 480w, assets/img/sobre-tatiana-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/sobre-tatiana-960.webp 960w" sizes="50vw">
+  <img src="assets/img/sobre-tatiana-960.jpg" width="1200" height="1500" alt="Tatiana Guinzelli sorrindo, de camisa branca, à mesa da clínica." decoding="async">
+</picture>
         </div>
       </div>
       <div class="sobre__texto">
@@ -215,12 +215,11 @@
 
   <!-- 5. Frase grande -->
   <section class="frase" aria-label="Frase de Tatiana Guinzelli">
-    <picture class="frase__foto">
-      <source media="(max-width: 899px)" srcset="assets/img/frase-cuidado-mobile.webp" type="image/webp">
-      <source media="(max-width: 899px)" srcset="assets/img/frase-cuidado-mobile.jpg">
-      <source srcset="assets/img/frase-cuidado-desktop.webp" type="image/webp">
-      <img src="assets/img/frase-cuidado-desktop.jpg" width="2400" height="1024" alt="" loading="lazy">
-    </picture>
+    <picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/frase-cuidado-mobile-480.webp 480w, assets/img/frase-cuidado-mobile-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/frase-cuidado-desktop-960.webp 960w, assets/img/frase-cuidado-desktop-1600.webp 1600w" sizes="50vw">
+  <img src="assets/img/frase-cuidado-desktop-960.jpg" width="2400" height="1024" alt="" decoding="async" loading="lazy">
+</picture>
     <div class="container frase__conteudo">
       <h2 class="frase__titulo revelar revelar--fade">Quem cuida também merece ser cuidada.</h2>
     </div>
@@ -231,12 +230,11 @@
     <div class="container">
       <div class="bloco-moldura">
         <div class="painel painel--lateral">
-          <picture class="painel__foto">
-            <source media="(max-width: 899px)" srcset="assets/img/painel-tecnologias-mobile.webp" type="image/webp">
-            <source media="(max-width: 899px)" srcset="assets/img/painel-tecnologias-mobile.jpg">
-            <source srcset="assets/img/painel-tecnologias.webp" type="image/webp">
-            <img src="assets/img/painel-tecnologias.jpg" width="2400" height="1600" alt="Tatiana Guinzelli, de jaleco e luvas, durante um atendimento com jato de plasma." loading="lazy">
-          </picture>
+          <picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/painel-tecnologias-mobile-480.webp 480w, assets/img/painel-tecnologias-mobile-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/painel-tecnologias-960.webp 960w, assets/img/painel-tecnologias-1600.webp 1600w" sizes="50vw">
+  <img src="assets/img/painel-tecnologias-960.jpg" width="2400" height="1600" alt="Tatiana Guinzelli, de jaleco e luvas, durante um atendimento com jato de plasma." decoding="async" loading="lazy">
+</picture>
           <div class="painel__conteudo">
             <div class="painel__cabeca">
               <p class="rotulo rotulo--branco">Tecnologias</p>
@@ -302,9 +300,10 @@
         </ol>
         <div class="atendimento__midia">
           <picture>
-            <source srcset="assets/img/atendimento-avaliacao.webp" type="image/webp">
-            <img src="assets/img/atendimento-avaliacao.jpg" width="1200" height="1500" alt="Tatiana Guinzelli sorrindo durante uma avaliação, à mesa da clínica." loading="lazy">
-          </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/atendimento-avaliacao-480.webp 480w, assets/img/atendimento-avaliacao-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/atendimento-avaliacao-960.webp 960w" sizes="50vw">
+  <img src="assets/img/atendimento-avaliacao-960.jpg" width="1200" height="1500" alt="Tatiana Guinzelli sorrindo durante uma avaliação, à mesa da clínica." decoding="async" loading="lazy">
+</picture>
         </div>
       </div>
       <div class="subfaixa">
@@ -381,9 +380,10 @@
       </div>
       <div class="duvidas__midia">
         <picture>
-          <source srcset="assets/img/duvidas-depilacao-led.webp" type="image/webp">
-          <img src="assets/img/duvidas-depilacao-led.jpg" width="811" height="1014" alt="Tatiana Guinzelli, de óculos de proteção, durante uma depilação a LED na perna." loading="lazy">
-        </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/duvidas-depilacao-led-480.webp 480w, assets/img/duvidas-depilacao-led-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/duvidas-depilacao-led-960.webp 960w" sizes="50vw">
+  <img src="assets/img/duvidas-depilacao-led-960.jpg" width="811" height="1014" alt="Tatiana Guinzelli, de óculos de proteção, durante uma depilação a LED na perna." decoding="async" loading="lazy">
+</picture>
       </div>
     </div>
   </section>
@@ -394,9 +394,10 @@
     <div class="container convite__conteudo">
       <div class="convite__retrato">
         <picture>
-          <source srcset="assets/img/cta-tatiana.webp" type="image/webp">
-          <img src="assets/img/cta-tatiana.jpg" width="482" height="602" alt="Retrato de Tatiana Guinzelli." loading="lazy">
-        </picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/cta-tatiana-480.webp 480w, assets/img/cta-tatiana-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/cta-tatiana-960.webp 960w" sizes="50vw">
+  <img src="assets/img/cta-tatiana-960.jpg" width="482" height="602" alt="Retrato de Tatiana Guinzelli." decoding="async" loading="lazy">
+</picture>
       </div>
       <p class="rotulo rotulo--entre rotulo--branco">Para começar</p>
       <h2>Se for para falar de pele, pode deixar comigo.</h2>
